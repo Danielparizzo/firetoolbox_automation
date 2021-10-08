@@ -1,16 +1,10 @@
 import pyautogui
+import time
 
-lockscreen = None
-while lockscreen is None:
-      lockscreen = pyautogui.locateOnScreen('lockscreen.png', grayscale = True)
-pyautogui.click('lockscreen.png')
+########## sideload FideliZi!, Ajuda FideliZi! and File manager ##########
+sideload = None
+while sideload is None:
+      sideload = pyautogui.locateOnScreen('sideload.png', grayscale= True)
+pyautogui.click(sideload)
 
-removeads = None
-while removeads is None:
-      removeads = pyautogui.locateOnScreen('removeadshover.png', grayscale = True)
-pyautogui.moveTo(removeads), pyautogui.moveRel(270, 0), pyautogui.click()
 
-executetool = None
-while executetool is None:
-      executetool = pyautogui.locateOnScreen('executetool.png', grayscale = True)
-pyautogui.click('executetool.png')
